@@ -2,6 +2,6 @@
 
 Test para Lenguaje de Marcas con Markdown
 
-##¿Qué es este repositiorio?
+<h2>¿Qué es este repositiorio?</h2>
 
 Aquí almacenamos la página web estática 
