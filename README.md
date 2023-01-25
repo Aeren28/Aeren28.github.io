@@ -16,7 +16,7 @@ Aquí almacenamos la página web estática con ejemplos de Markdown, CSS, Javasc
 
 <h2>Ejemplos de listas de tareas</h2>
 
-- | | Aprender HTML
-- | | Aprender CSS
-- | | Aprender Javascript
-- |x| Aprender MySQL
+- [ ] Aprender HTML
+- [ ] Aprender CSS
+- [ ] Aprender Javascript
+- [x] Aprender MySQL
