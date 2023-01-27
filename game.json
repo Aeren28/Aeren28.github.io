@@ -15,7 +15,7 @@
 	],
 	
 	"doors":[
-		{"id":"pricipal","description":"Puerta de entrada a ENTI","rooms":["parking","hall"]}
+		{"id":"pricipal","description":"Puerta de entrada a ENTI","rooms":["parking","hall"]},
 		{"id":"salida","description":"La salvación"}
 	]
 }
