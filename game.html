@@ -14,11 +14,14 @@
 				
 				let game_data;
 				
+				let current_room = 0;
+				let items_piecked = [];
+				
 				function game (data){
 					game_data = data;
 					
 					document.getElementById("terminal").innerHTML = "<p><strong>¡Bienvenidos a ENTIerrame!</strong> El juego de terror definitivo</p>";
-					document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[0].name+". ¿Que quieres hacer?</p>";
+					document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Que quieres hacer?</p>";
 				}
 				
 				fetch("https://aeren28.github.io/game.json").then(response => response.json()).then(data => game(data));
