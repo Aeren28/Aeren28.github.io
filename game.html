@@ -10,7 +10,7 @@
 			<link rel="stylesheet" href="base.css" />
 			
 			<script>
-				function game ("data"){
+				function game (data){
 					console.log(data.rooms[0].name);
 				}
 				fetch("https://aeren28.github.io/game.json").then(response => response.json()).then(data => game(data));
