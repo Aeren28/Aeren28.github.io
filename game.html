@@ -16,6 +16,12 @@
 				
 				let current_room = 0;
 				let items_piecked = [];
+				let command = [];
+				
+				function execute_command () {
+				command = document.getElementById("commands").value.split(" ");
+				console.log(command);
+				}
 				
 				function game (data){
 					game_data = data;
@@ -52,7 +58,7 @@
 					<form>
 						<div id="terminal"></div>
 						<input type="text" id="commands"/>
-						<input type="submit" value="Acción"/>
+						<input type="submit" value="Acción" id="submit-command" onclick="execute_command(); return false;"/>
 					</form>
 				</article>
 				

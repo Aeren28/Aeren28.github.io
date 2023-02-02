@@ -7,15 +7,67 @@
 			"items":["piedra","bicicleta"],
 			"doors":["principal","salida"]
 		}
+		{
+            "id": "principal",
+            "name": "Entrada del edificio de ENTI",
+            "description": "Hay un armatoste enrome al entrar, secretaria y la sala de descanso donde te puedes comprar un café (la maquina va cuando quiere xd)",
+            "items": ["armatoste"],
+            "doors": ["parking", "pasillo", "secretaria", "saladescanso"]
+        },
+        {
+            "id": "hall",
+            "name": "Pasillo de ENTI",
+            "description": "Un pasillo con una mesa redonda y con un bonito cartel muy friki en la pared xd",
+            "items": ["cartel"],
+            "doors": ["principal", "sala02", "escaleras01"]
+        },
+        {
+            "id": "salida",
+            "name": "Salida de ENTI",
+            "description": "No puedes salir hasta que le pagues todo a hacienda",
+            "items": ["carta", "verja"],
+            "doors": ["parking"]
+        },
+        {
+            "id": "secretaria",
+            "name": "Secretaria de ENTI",
+            "description": "Secretaria donde se hace magia negra para que todos los alumnos con acentos no puedan guardar en su disco las cosas ^^",
+            "items": ["placabase", "nokia"],
+            "doors": ["principalsecretaria"]
+        },
+        {
+            "id": "saladescanso",
+            "name": "Sala de descanso de ENTI",
+            "description": "Sala donde apesar de no tener dinero gastamos más dinero para desayunar bien, hay una foto de una cabra satanica?",
+            "items": ["maquinacafe", "maquinacomida", "poster", "maquinabebidas"],
+            "doors": ["principalsaladescanso"]
+        }
 	],
 	
 	"items":[
 		{"id":"piedra", "name":"Pedrusco mugroso", "description": "Es una piedra sucia", "pickable":true},
-		{"id":"bicicleta", "name":"Bicicleta", "description":"Algún alumno la abandonó", "pickable":false}
+		{"id":"bicicleta", "name":"Bicicleta", "description":"Algún alumno la abandonó", "pickable":false},
+		{"id":"armatoste", "name":"Detector de Covis", "description":"Armatoste de la post guerra que te dice si tienes la peste o no", "pickable":false},
+		{"id":"cartel", "name":"Cartel", "description":"Dibujos a 5€ si son furros 1€ más", "pickable":false},
+		{"id":"carta", "name":"Carta", "description":"Sabias que vaporeon...", "pickable":true},
+		{"id":"verja", "name":"Verja", "description":"Verja más oxidada que yo tendría cuidao'", "pickable":false},
+		{"id":"placabase", "name":"Placa Base", "description":"Igual con esto me pago el siguiente año eh", "pickable":true},
+		{"id":"nokia", "name":"Nokia", "description":"jaja a romper cosas", "pickable":true},
+		{"id":"poster", "name":"Poster", "description":"Un señor galante con una cabeza de cabra programando?", "pickable":true},
+		{"id":"maquinacafe", "name":"Maquina de Café", "description":"Esto no va fijo", "pickable":false},
+		{"id":"maquinacomida", "name":"Maquina de Comida", "description":"Como rentan unas Oreos", "pickable":false},
+		{"id":"maquinabebidas", "name":"Maquina de Refrescos", "description":"Cocacola sabrosona", "pickable":false}
+	
+			
 	],
 	
 	"doors":[
-		{"id":"pricipal","description":"Puerta de entrada a ENTI","rooms":["parking","hall"]},
-		{"id":"salida","description":"La salvación"}
+		{"id":"pricipal","description":"Puerta de entrada a ENTI","rooms":["parking","hall","hall"]},
+		{"id":"salida","description":"La salvación", "rooms":["parking",""]},
+		{"id":"hall","description":"Pasillo de ENTI", "rooms":["principal","hall","saladescanso"]},
+		{"id":"secretaria","description":"Secretaria de ENTI", "rooms":["principal","secretaria"]},
+		{"id":"saladescanso","description":"Sala de descanso de ENTI", "rooms":["hall"]},
+		{"id":"escalera01","description":"Escaleras siguiente planta", "rooms":["hall"]},
+		{"id":"sala02","description":"Nuestra clase", "rooms":["hall"]},
 	]
 }
