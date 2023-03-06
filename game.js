@@ -1,7 +1,7 @@
 let game_data;
 				
 let current_room = 0;
-let items_piecked = [];
+let items_picked = [];
 let command = [];
 				
 				
@@ -73,7 +73,7 @@ function parseCommand (command) {
 					
 		case 'ver':
 			terminalOut("<p>" + game_data.rooms[current_room].description + "</p>");
-		break;
+			break;
 							
 		case 'ir':
 							
@@ -189,7 +189,7 @@ function game (data){
 	game_data = data;
 					
 	terminalOut("<p><strong>¡Bienvenidos a ENTIerrame!</strong> El juego de terror definitivo</p>");
-	terminalOut("<p>Te encuentras en " + game_data.rooms[current_room].name + ". ¿Que quieres hacer?</p>");
+	terminalOut("<p>Te encuentras en " + data.rooms[current_room].name + ". ¿Que quieres hacer?</p>");
 }
 				
 fetch("https://aeren28.github.io/game.json").then(response => response.json()).then(data => game(data));
