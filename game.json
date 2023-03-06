@@ -6,7 +6,8 @@
 			"description":"El Parking que no puedes usar", 
 			"items":["piedra","bicicleta"],
 			"doors":["principal","salida"]
-		}
+		},
+		
 		{
             "id": "principal",
             "name": "Entrada del edificio de ENTI",
@@ -14,6 +15,7 @@
             "items": ["armatoste"],
             "doors": ["parking", "pasillo", "secretaria", "saladescanso"]
         },
+		
         {
             "id": "hall",
             "name": "Pasillo de ENTI",
@@ -21,6 +23,7 @@
             "items": ["cartel"],
             "doors": ["principal", "sala02", "escaleras01"]
         },
+		
         {
             "id": "salida",
             "name": "Salida de ENTI",
@@ -28,6 +31,7 @@
             "items": ["carta", "verja"],
             "doors": ["parking"]
         },
+		
         {
             "id": "secretaria",
             "name": "Secretaria de ENTI",
@@ -35,6 +39,7 @@
             "items": ["placabase", "nokia"],
             "doors": ["principalsecretaria"]
         },
+		
         {
             "id": "saladescanso",
             "name": "Sala de descanso de ENTI",
@@ -58,7 +63,6 @@
 		{"id":"maquinacomida", "name":"Maquina de Comida", "description":"Como rentan unas Oreos", "pickable":false},
 		{"id":"maquinabebidas", "name":"Maquina de Refrescos", "description":"Cocacola sabrosona", "pickable":false}
 	
-			
 	],
 	
 	"doors":[
@@ -68,6 +72,7 @@
 		{"id":"secretaria","description":"Secretaria de ENTI", "rooms":["principal","secretaria"]},
 		{"id":"saladescanso","description":"Sala de descanso de ENTI", "rooms":["hall"]},
 		{"id":"escalera01","description":"Escaleras siguiente planta", "rooms":["hall"]},
-		{"id":"sala02","description":"Nuestra clase", "rooms":["hall"]},
+		{"id":"sala02","description":"Nuestra clase", "rooms":["hall"]}
+		
 	]
 }

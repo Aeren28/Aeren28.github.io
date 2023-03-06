@@ -49,7 +49,7 @@ function findItemNumber (item) {
 }
 			
 				
-function execute_command () {
+function executeCommand () {
 	command = document.getElementById("commands").value.trim().split(" ");
 	document.getElementById("commands").value = "";
 	console.log(command);
@@ -164,7 +164,7 @@ function parseInstruction (instruction ) {
 					
 					item_num = game_data.items.indexOf(item);
 					
-					if (game_data.items[items_num].pickable == false) {
+					if (game_data.items[item_num].pickable == false) {
 						terminalOut("<p>El objeto<strong> " + item + "</strong> no puedes ser cogido</p>");
 						return;
 					}

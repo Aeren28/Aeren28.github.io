@@ -2,6 +2,11 @@ html{
 	font-family: 'Shadows Into Light Two', cursive;
 }
 
+body {
+	padding: 0;
+	margin: 0;
+}
+
 header,h1,nav,main,article,aside,footer{
 	padding:0;
 	margin:0;
@@ -10,14 +15,33 @@ header,h1,nav,main,article,aside,footer{
 
 header{
 	display:flex;
+	align-items: center;
+}
+
+h1{
+	flex-basis: flex;
+	text-align: center;
 }
 
 nav{
+	flex-basis: 55%;
+}
+
+#main-menu{
+	list-style: none;
 	display:flex;
+	padding: 0;
+	margin: 0 30px;
+	justify-content: space-between;
+}
+
+#main-menu li{
+	padding: 10px;
+	margin: 0 10px;
 }
 
 main{
-	display:flex;
+	display: flex;
 }
 
 article{
@@ -30,13 +54,15 @@ aside{
 
 @media (max-width: 600px){
 	main{
-		flex-direction:column;
+		flex-direction: column;
 	}
+	
 	article{
-		flex-basis:100%;
+		flex-basis: 100%;
 	}
+	
 	aside{
-		flex-basis:100%;
+		flex-basis: 100%;
 	}
 	
 }
