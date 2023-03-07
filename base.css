@@ -59,6 +59,7 @@ aside{
 	
 	article{
 		flex-basis: 100%;
+		
 	}
 	
 	aside{
@@ -69,4 +70,13 @@ aside{
 
 form{
 	margin: 64px;
+}
+
+img{
+	width: 170px;
+	height: 220px;
+}
+
+ p {
+	padding: 0 12px 0 12px;
 }
