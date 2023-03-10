@@ -55,7 +55,7 @@
 		{"id":"armatoste", "name":"Detector de Covis", "description":"Armatoste de la post guerra que te dice si tienes la peste o no", "pickable":false},
 		{"id":"cartel", "name":"Cartel", "description":"Dibujos a 5€ si son furros 1€ más", "pickable":false},
 		{"id":"carta", "name":"Carta", "description":"Sabias que vaporeon...", "pickable":true},
-		{"id":"verja", "name":"Verja", "description":"Verja más oxidada que yo tendría cuidao'", "pickable":false},
+		{"id":"verja", "name":"Verja", "description":"Verja más oxidada que yo tendría cuidao", "pickable":false},
 		{"id":"placabase", "name":"Placa Base", "description":"Igual con esto me pago el siguiente año eh", "pickable":true},
 		{"id":"nokia", "name":"Nokia", "description":"jaja a romper cosas", "pickable":true},
 		{"id":"poster", "name":"Poster", "description":"Un señor galante con una cabeza de cabra programando?", "pickable":true},
