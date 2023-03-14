@@ -9,6 +9,7 @@
 	--twitter: #55acee;
 	--twitch: #7B09D1;
 	--youtube: #D10909;
+	--tiktok: #00f2ea;
 }
 
 .redes-container{
@@ -59,4 +60,8 @@
 
 .redes-container li .youtube:hover{
 	background: var(--youtube);
+}
+
+.redes-container li .tiktok:hover{
+	background: var(--tiktok);
 }
