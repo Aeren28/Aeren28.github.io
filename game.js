@@ -81,7 +81,12 @@ function parseCommand (command) {
 			let doors_num = game_data.rooms[current_room].doors.length;
 							
 			for (let i = 0; i < doors_num; i++) {
-				doors += game_data.rooms[current_room].doors[i] + " ";
+				if(i < doors_num - 1){
+					doors += game_data.rooms[current_room].doors[i] + ", ";
+				} 
+				else{
+					doors += game_data.rooms[current_room].doors[i];
+				}
 			}
 							
 			terminalOut("<p>Puedes ir a: " + doors + "</p>");
@@ -90,11 +95,16 @@ function parseCommand (command) {
 							
 		case 'coger':
 			
-			let itmes = "";
+			let items = "";
 			let items_num = game_data.rooms[current_room].items.length;
 			
 			for (let i = 0; i < items_num; i++){
-				items += game_data.rooms[current_room].items[i] + " ";
+				if(i < items_num - 1){
+					items += game_data.rooms[current_room].items[i] + ", ";
+				}
+				else{
+					items += game_data.rooms[current_room].items[i];
+				}
 			}
 			
 			terminalOut("<p>Los items en la sala son: " + items + "</p>");
