@@ -10,15 +10,22 @@
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymus"/>
 			
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			
 			<link rel="stylesheet" href="icons.css"/>
 			<link rel="stylesheet" href="base.css" />
+			<link rel="stylesheet" href="drawer.css" />
+			
 		</head>
 		
 		<body>
 			<header>
+				<input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+				<label for="drawer-toggle" id="drawer-toggle-label"></label>
+				
 				<h1>Nerea Fernández, página de ENTI (M04UF1)</h1>
 			
-				<nav>
+				<nav id="drawer">
 					<ul id="main-menu">
 						<li id="menu-presentation"><a href="index.html">Presentación</a></li>
 						<li id="menu-hobbies"><a href="hobbies.html">Hobbies</a></li>
@@ -38,6 +45,8 @@
 						
 						<p><img src="img/serengamer.jpg" alt="Foto de un gato viendo la pantalla de youtube mientras juegan al lol" title="Seren Gamer" /></p>
 						<p>Soy Nerea, una estudiante de Enti del CFGS de Desarrollo de Aplicaciones Multiplataforma, Perfil Videojuegos y Ocio Digital, o también DAMVIOD, esta página web es un trabajo final de la asignatura de programación con XML, es un trabajo donde realizamos un juego dentro de la página con JavaScript, el juego se llama ENTIérrame y es el "mejor juego de terror", bueno un juego que se hizo durante menos de un mes, no sé que podría salir mal XD weno y como se puede ver obviamente me encantan los gatos, especialmente mi gatete que se llama Serendipity, o Seren para ser más cortos ^^, bueno ya te dejo para que vayas a cotillear el resto de página nos vemos, o no </p>
+				
+				
 				</article>
 					
 				<aside>
@@ -59,7 +68,6 @@
 					<script>
 						document.getElementById("footer-year").innerHTML = new Date().getFullYear();
 					</script>
-					
 			</footer>
 		</body>
 	</html>
