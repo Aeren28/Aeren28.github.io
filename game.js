@@ -15,8 +15,9 @@ function terminalOut (info) {
 			
 function findDoorNumber (door) {
 	let doors_num = game_data.doors.length;
-					
+	console.log(door);
 	for (let i = 0; i < doors_num; i++) {
+		console.log("Door: ", game_data.doors[i].id);
 		if (game_data.doors[i].id == door) {
 			return i;
 		}
@@ -116,7 +117,7 @@ function parseCommand (command) {
 	}
 }
 			
-function parseInstruction (instruction ) {
+function parseInstruction (instruction) {
 	switch (instruction[0]) {
 					
 		case 'ver':
@@ -137,6 +138,7 @@ function parseInstruction (instruction ) {
 		case 'ir':
 						
 			let door_number = findDoorNumber(instruction[1]);
+			console.log("door_number: ",door_number);
 						
 			if (door_number < 0) {
 				console.log("Puerta errónea");
