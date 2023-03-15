@@ -37,13 +37,14 @@
 	transition .2s;
 }
 
-.redes-container :hover a{
+.redes-container ul:hover a{
 	filter: blur(2px);
 }
 
 .redes-container ul li a:hover{
-	transform: transalteY(-3px) scale(1.05);
+	transform: translateY(-3px) scale(1.05);
 	box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+	filter: none;
 }
 
 .redes-container li .instagram:hover{
