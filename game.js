@@ -193,6 +193,7 @@ function parseInstruction (instruction ) {
 		default:
 			terminalOut("<p><strong>ERROR:</strong> Comando <strong>" + instruction[0] + "</strong> no encontrado</p>");
 	}
+	
 }
 			
 function game (data){

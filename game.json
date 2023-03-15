@@ -66,7 +66,7 @@
 	],
 	
 	"doors":[
-		{"id":"pricipal","description":"Puerta de entrada a ENTI","rooms":["parking","hall","hall"]},
+		{"id":"pricipal","description":"Puerta de entrada a ENTI","rooms":["parking","hall"]},
 		{"id":"salida","description":"La salvación", "rooms":["parking",""]},
 		{"id":"hall","description":"Pasillo de ENTI", "rooms":["principal","hall","saladescanso"]},
 		{"id":"secretaria","description":"Secretaria de ENTI", "rooms":["principal","secretaria"]},
