@@ -84,5 +84,30 @@ img{
 main{
 	display: flex;
 	padding: 12px;
-	margin: 70px 0px;
+	margin: 100px 0px;
 }
+
+body{
+	background: #FFFFFF;
+
+}
+
+footer{
+	background: #292929;
+	padding: 16px;	
+	background-size: cover;
+	justify-content: space-between;
+	display: flex;
+}
+	footer p {
+		color:#F2E5FA;
+	}
+	
+#footer-redes {
+	justify-content: flex-end;
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0 30px;
+}
+
