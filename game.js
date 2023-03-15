@@ -142,13 +142,6 @@ function parseInstruction (instruction ) {
 				console.log("Puerta errónea");
 				return;
 			}
-						
-			let room_number = findRoomNumber(game_data.doors[door_number].rooms[0]);
-			let next_room_name = "";
-							
-			if (room_number == current_room) {
-				current_room = findRoomNumber(game_data.doors[door_number].rooms[1]);
-			}
 							
 			else {
 				current_room = room_number;
