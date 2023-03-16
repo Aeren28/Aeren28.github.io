@@ -212,10 +212,28 @@ function parseInstruction (instruction) {
 
 
 			break;
+			
+			case "inventario":
+			
+				let inventoryItem_num = -1;
+				for (let i = 0; i < game_data.items.length; i++){
+					if (game_data.items[i].id == instruction[1]){
+						inventoryItem_num = i;
+					}
+				}
+				if (inventoryItem_num < 0){
+					console.log("Item erróneo");
+					return;
+				}
+
+				terminalOut(game_data.items[inventoryItem_num].description);
+				break;
 
 
 		default:
 			terminalOut("<p><strong>ERROR:</strong> Comando <strong>" + instruction[0] + "</strong> no encontrado</p>");
+			
+			break;
 	}
 	
 }
