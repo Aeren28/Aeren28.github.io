@@ -117,7 +117,7 @@ function parseCommand (command) {
 			
 		case "inventario":
 		
-			let items = "";
+			let inventory = "";
 			
 			if (game_data.inventory.length <= 0){
 				terminal_out("<p>No tienes ningun objeto</p>")
@@ -125,14 +125,14 @@ function parseCommand (command) {
 			else{
 				for(let i = 0; i < game_data.inventory.length; i++){
 					if (i < game_data.inventory.length - 1){
-						items += game_data.inventory[i].id+", ";
+						inventory += game_data.inventory[i].id+", ";
 					}
 					else{
-						items += game_data.inventory[i].id;
+						inventory += game_data.inventory[i].id;
 					}
 				}
 				
-				terminal_out("<p>"+items+"</p>");
+				terminal_out("<p>"+inventory+"</p>");
 			}
 			
 			break;
