@@ -120,7 +120,7 @@ function parseCommand (command) {
 			let inventory = "";
 			
 			if (game_data.inventory.length <= 0){
-				terminal_out("<p>No tienes ningun objeto</p>")
+				terminalOut("<p>No tienes ningun objeto</p>")
 			}
 			else{
 				for(let i = 0; i < game_data.inventory.length; i++){
@@ -132,7 +132,7 @@ function parseCommand (command) {
 					}
 				}
 				
-				terminal_out("<p>"+inventory+"</p>");
+				terminalOut("<p>"+inventory+"</p>");
 			}
 			
 			break;
