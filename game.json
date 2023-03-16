@@ -74,5 +74,7 @@
 		{"id":"escalera01","description":"Escaleras siguiente planta", "rooms":["hall"]},
 		{"id":"sala02","description":"Nuestra clase", "rooms":["hall"]}
 		
-	]
+	],
+	
+	"inventory":[]
 }
