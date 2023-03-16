@@ -195,7 +195,7 @@ function parseInstruction (instruction) {
 
 			if (game_data.items[item_num].pickable == false){
 				
-				terminal_out("<p>No puedes coger esto</p>");
+				terminalOut("<p>No puedes coger esto</p>");
 				return;
 			}
 						
