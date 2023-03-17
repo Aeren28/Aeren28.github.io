@@ -68,11 +68,11 @@
 	"doors":[
 		{"id":"principal","description":"Puerta de entrada a ENTI","rooms":["parking","hall"]},
 		{"id":"salida","description":"La salvación", "rooms":["parking",""]},
-		{"id":"hall","description":"Pasillo de ENTI", "rooms":["principal","sala02"]},
-		{"id":"secretaria","description":"Secretaria de ENTI", "rooms":["principal","saladescanso"]},
-		{"id":"saladescanso","description":"Sala de descanso de ENTI", "rooms":["hall","escalera01"]},
-		{"id":"escalera01","description":"Escaleras siguiente planta", "rooms":["escalera01","sala02"]},
-		{"id":"sala02","description":"Nuestra clase", "rooms":["hall","secretaria"]}
+		{"id":"hall","description":"Pasillo de ENTI", "rooms":["princpal", "hall"]},
+		{"id":"secretaria","description":"Secretaria de ENTI", "rooms":["principal", "secretaria"]},
+		{"id":"saladescanso","description":"Sala de descanso de ENTI", "rooms":["parking", "hall"]},
+		{"id":"escalera01","description":"Escaleras siguiente planta", "rooms":["hall", "escalera01"]},
+		{"id":"sala02","description":"Nuestra clase", "rooms":["hall","sala02"]}
 		
 	],
 	
